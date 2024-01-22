@@ -1,0 +1,44 @@
+@font-face {
+    font-family:'Android';
+    src: url('fontes/idroid.otf') format ('opentype');
+}
+
+
+.header {
+    text-align: center;
+    background-image: linear-gradient(to top, #34B86F, #2A965A, #1A5F38 );
+    padding: 2px;
+}
+
+nav {
+    display: block;
+    height: 20px;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 5px;
+    font-color: white;
+}
+
+a:hover {
+
+
+}
+
+h1, h2 {
+    font-family: 'idroid';
+    font-size:  ;
+    font-family: 'Android';
+}
+
+body {
+    background-color: #3DDC84;
+    text-align: center;
+}
+
+.main {
+    background-color: #ffffff;
+    width: 1500px;
+}
