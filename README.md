@@ -1,3 +1,3 @@
 # Estudos-tecnologias Front-End
 
-Exercícios de Lógica e projetos HTML e CSS.
+Estudo de Lógica algoritmica, projetos HTML/CSS e outros estudos.
