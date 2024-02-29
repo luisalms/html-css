@@ -1,8 +1,3 @@
 # Estudos-tecnologias Front-End
 
-Estudo de algoritmos, projetos HTML/CSS e outros estudos.
-
-<table>
-  <th>Operadores</th>
-  <td>&</td>
-</table>
+Estudando e praticando as tecnologias da Web, HTML, CSS e JavaScript.
