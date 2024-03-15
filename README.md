@@ -1,3 +1,4 @@
 # Estudos-tecnologias Front-End
 
-Estudando e praticando as tecnologias da Web, HTML, CSS e JavaScript.
+<p>🔹 HTML, CSS e JavaScript.</p>
+
