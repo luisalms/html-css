@@ -1,4 +1,4 @@
 # Estudos-tecnologias Front-End
 
-<p>🔹 Repositório de códigos e arquivos; HTML, CSS e JavaScript.</p>
+<p>🔹 Repositório de códigos e arquivos de estudo; HTML, CSS e JavaScript.</p>
 
