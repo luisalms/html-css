@@ -1,7 +1,5 @@
-# Estudos-tecnologias Front-End
+# HTML and CSS 
 
-<p>🔹 Repositório de códigos e arquivos de estudo; HTML, CSS e JavaScript.</p>
+<p>🔹 Practicing basic concepts in html and css</p>
 
-<ul>
-  <li>Lista de desafios<a href="https://www.frontendmentor.io/">front-end.</a></li>
-</ul>
+
