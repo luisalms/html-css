@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="posit.css">
+</head>
+<body>
+    <h1 class="titulo"><code>Position</code></h1>
+    <p>
+        A propriedade position do CSS define a posição de um elemento em um documento. Para tal, esta propriedade funciona em conjunto com as propriedades <b>left</b>, <b>right</b>, <b>top</b>, <b>bottom</b> e <b>z-index</b> para determinar a posição final de um elemento em uma página.
+    </p>
+    <p>
+        Existem cinco valores que a propriedade position pode receber. Elas são:
+        <ol>
+            <li>static</li>
+            <li>relative</li>
+            <li>absolute</li>
+            <li>fixed</li>
+            <li>sticky</li>
+        </ol>
+    </p><hr><br>
+    <h2>Static</h2>
+    <p>
+        Valor padrão para qualquer elemento da página. Garantirá que ele seguirá o <b>fluxo de renderização padrão</b> atribuído pela propriedade <u>display</u>.
+    </p>
+    <div class="parent-element">
+        <div class="sibling-element">
+            I'm the other sibling element.
+        </div>
+        
+        <div class="main-element">
+            All eyes on me. I am the main element.
+        </div>
+        
+        <div class="sibling-element">
+            I'm the other sibling element.
+        </div> 
+    </div><br>
+
+    <h2>Relative</h2>
+    <p>
+        Ao aplicarmos o tipo relative, a posição deste elemento poderá ser manipulada através das propriedades <b>Top</b>, <b>Bottom</b>, <b>Left</b>, <b>Right</b>. Estes assumem valores numéricos que determinam em qual coordernada <b>X</b> ou <b>Y</b> seu elemento irá se mover.
+    </p>
+    <div class="parent-element">
+        <div class="quarto">
+            I'm the other sibling element.
+        </div>
+        
+        <div class="terceiro">
+            All eyes on me. I am the main element.
+        </div>
+        
+        <div class="quarto">
+            I'm the other sibling element.
+        </div> 
+    </div>
+    <p>
+        No exemplo acima, foi aplicado um left com 15px e um botton com 13px, forçando o Box de cor amarela a se mover para o lado esquerdo e para cima, conforme especificado.
+    </p>
+    <p>
+        Assim, elementos posicionados relativamente são deslocados de sua posição normal dentro do documento, mas <b>sem que o deslocamento afete outros elementos</b>; é como se ainda ocupasse o espaço de sua localização normal. 
+        Com isso, ele é <b>relativo a si próprio</b>, ou seja, ao local que ocupava originalmente.
+    </p><br>
+
+    <h2>Absolute</h2>
+    <p>
+        Já esta propriedade, é posicionada em <b>relação ao ancestral mais próximo</b>, ou seja, permite que você posicione um elemento <b>de acordo com o elemento pai</b> (desde que este tenha um posicionamento diferente de static). Caso não haja pai, ele é colocado em relação ao inicial <i>containing block</i>. Sua posição final é determinada pelos valores de <b>top</b>, <b>right</b>, <b>bottom,</b> e <b>left</b>.
+    </p>
+
+    <div class="parent-element">
+        <div class="quinto">
+            I'm the other sibling element.
+        </div>
+        
+        <div class="sexto">
+            All eyes on me. I am the main element.
+        </div>
+        
+        <div class="quinto">
+            I'm the other sibling element.
+        </div> 
+    </div>
+
+    <p>
+        Podemos observar que o elemento é <b>removido do fluxo normal</b> de documentos e nenhum espaço é criado para ele no layout da página. Assim, outros elementos são posicionados como se ele não existisse. 
+    </p>
+    <p> 
+        Se um ancestral posicionado não existir, ele é posicionado em relação ao bloco de contenção do elemento raiz do documento.</p>
+    <p>
+        Este valor cria um novo contexto de empilhamento quando o valor de z-indexnão é auto. As margens das caixas posicionadas absolutamente não colapsam com outras margens.
+    </p>
+    <p>
+        É importante comentar que quando utilizamos a posição absoluta, os elementos que originam esta posição passam <b>a renderizar em uma camada acima de outros elementos</b> que são do tipo static ou relativo, sobrepondo-se a elementos que não possuem posição ou z-index definido.
+    </p>
+    <p>
+        Maior parte do tempo, um elemento de posicionamento absoluto que tem height e width configurado como auto são dimensionados de acordo com seu conteúdo interno. No entanto, elementos não substituídos e absolutamente posicionados podem ser feitos para preencher o espaço vertical disponível especificando ambos top e bottom e deixando height sem especificar (ou seja, auto). Da mesma forma, eles podem preencher o espaço horizontal disponível especificando lefte righte deixando widthcomo auto.
+
+        Exceto para esses casos descritos abaixo (para elementos de posicionamento absoluto que preenchem o espaço disponível):
+
+        Se ambos top são bottom definidos (tecnicamento não sendo auto), top prevalece.
+        Se ambos left são right definidos, left prevalece quando direction é ltr(Direção da escrita Portuguesa, Japonês na horizontal, etc.) e right prevalece quando direction for configurado rtl(Padrão de escrita em idiomas como Persa, Arabe, Hebraico, etc.)
+    </p><br>
+
+    <h2>Fixed</h2>
+    <p>
+        Este tipo de posição se comporta muito semelhante ao position absoluto , com a única diferença que <b>sua referência de posição é ao elemento window/body</b> e não ao elemento pai no qual este está inserido.
+    </p>
+    <p>
+        Sua posição final é determinada pelos valores de <b>Top</b>, <b>Right</b>, <b>Bottom</b> e <b>Left</b>.
+    </p>
+
+    <div class="parent-element">
+        <div class="outrofixo">
+            I'm the other sibling element.
+        </div>
+        
+        <div class="fixo">
+            All eyes on me. I am the main <b>and (only) fixed</b> element.
+        </div>
+        
+        <div class="outrofixo">
+            I'm the other sibling element.
+        </div> 
+    </div>
+    <p>
+        Assim, o elemento é removido do fluxo normal de documentos e nenhum espaço é criado para o elemento no layout da página. Ele está posicionado em relação ao bloco inicial <i>containing block</i> estabelecido pelo <b>viewport</b> (exceto quando um de seus ancestrais tiver uma propriedade <i>transform</i>, <i>perspective</i> ou <i>filter</i> definido como algo diferente de <i>none</i>).
+    </p>
+    <p>
+        Este recurso permite que criemos elementos fixos que sejam <b>independentes da rolagem da página</b>, permanecendo eles nas posições definidas.
+    </p><br>
+
+    <h2>Sticky</h2>
+    <p>
+        Pode ser pensado como <b>um híbrido de posicionamento <i>relativo</i> e <i>fixo</i></b>. Um elemento posicionado como <i>sticky</i> é tratado como posicionado <u>relativo</u> até cruzar um limite especificado, em cujo ponto ele é tratado como <u>fixo</u> até atingir o limite de seu pai. 
+    </p>
+    <p>
+        Você deve especificar um limite com pelo menos um de <b>Top</b>, <b>Right</b>, <b>Bottom</b>, ou <b>Left</b> para que o posicionamento fixo se comporte como esperado. Caso contrário, ele será indistinguível do posicionamento relativo.
+    </p>
+    <div class="parent-element">
+        <div class="outrosticky">
+            I'm the other sibling element.
+        </div>
+        
+        <div class="sticky">
+            All eyes on me. I am the main <b>and (only) fixed</b> element.
+        </div>
+        
+        <div class="outrosticky">
+            I'm the other sibling element.
+        </div> 
+    </div>
+    <p>
+        É um recurso interessante para a utilização de <u>menus</u> que são <i>fixos</i> e ao mesmo tempo <i>relativos</i> quando necessário. Também é muito útil para configurar <u>cabeçalhos de tabelas</u> e <u>títulos em uma lista</u>.
+    </p><hr>
+
+    <h3>Referências:</h3>
+    <ul>
+        <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/position">MDN</a></li>
+        <li><a href="https://medium.com/@iagomachado/conhecendo-conceitos-b%C3%A1sicos-de-css-position-e-display-fe878eca0690">Medium</a></li>
+    </ul>
+</body>
+</html>

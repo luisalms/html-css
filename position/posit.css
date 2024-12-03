@@ -1,0 +1,91 @@
+body {
+    margin: 150px;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.titulo {
+    text-align: center;
+    color: dodgerblue;
+}
+
+h3 {
+    color: gray;
+}
+
+.parent-element { /*Conteiner*/
+    border: 1px solid black;
+    box-shadow: 3px 3px 3px #928e8eb4;
+    position: relative;
+}
+
+p, li { /*Parágrafo e item-list*/
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+}
+
+.main-element { /*Primeiro box - Static*/
+    position: static;
+    left: 10px;
+    bottom: 10px;
+    background-color: rgba(255, 255, 0, 0.61);
+    padding: 10px;
+}
+
+.sibling-element {
+    padding: 10px;
+    background-color: #f2f2f2;
+}
+
+.terceiro { /*Segundo box - Relative*/
+    position: relative;
+    left: 15px;
+    bottom: 13px;
+    background-color: rgba(0, 255, 191, 0.466);
+    padding: 10px;
+}
+
+.quarto {
+    padding: 10px;
+    background-color: #f2f2f2;
+}
+
+.sexto { /*Terceiro box - Absolute*/
+    position: absolute;
+    background-color: rgba(43, 255, 0, 0.445);
+    padding: 10px;
+    right: 15px;
+    top: 10px;
+}
+
+.quinto {
+    padding: 10px;
+    background-color: #f2f2f2;
+}
+
+.fixo { /*Quarto box - Fixed*/
+    position: fixed;
+    background-color: rgba(189, 146, 185, 0.445);
+    padding: 10px;
+    top: 650px;
+    left: 1000px;
+}
+
+.outrofixo {
+    padding: 10px;
+    background-color: #f2f2f2;
+}
+
+
+.sticky { /*Quinto box - Sticky*/
+    position: sticky;
+    background-color: rgba(177, 238, 233, 0.445);
+    padding: 10px;
+    top: 650px;
+    left: 1000px;
+}
+
+.outrosticky {
+    padding: 10px;
+    background-color: #f2f2f2;
+}
