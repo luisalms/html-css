@@ -1,5 +1,5 @@
 # HTML and CSS 
 
-<p>🔹 Practicing basic concepts in HTML and CSS.</p>
+<p>Conceitos básicos de HTML e CSS e alguns projetos simples.</p>
 
 
